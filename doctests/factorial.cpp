@@ -2,15 +2,13 @@
 #include <doctest.h>
 using namespace std;
 
-int sum_to_n(int n){
-
-	while (n>0){
-		int n += int total;	
-		int n = int n-1;
+int sum_to_n(int n) {
+        int total = n;
+	for (int i = total-1; i >= 1; i--) {
+	    total += i;
 	}	
-	return int total;
+	return total;
 }
-
 
 TEST_CASE("sum_to_n(int n) returns sum of integers from 1 to n") {
     CHECK(sum_to_n(3) == 6);

@@ -438,3 +438,65 @@ CPATH -> environment variable that speicfies the search path that the proeproces
 - A simple way to write if else statements
 - The formula: <code>condition ? expression_if_true : expression_if_false;</code>
     - <code>largest = (d > largest) ? d : largest;</code>
+
+## Day 10: 9/30/2026
+My computer wasn't working and got reimaged. Today was a doctest practice day, so I have no notes.
+
+## Day 11: 10/2/2026
+(I was sick, so all these notes were taken on my own time)
+### String
+Review: 5 types of values we know.
+- bool, char, int, float, and double.
+From C++ standard library: <code>#include <string> </code>
+In code, these variables are defined with as such: <code>string n;</code>
+
+#### Extracting Characters from a string
+- You can use the char variable and extract from a string.
+<code>
+string n = "Hello"
+char letter = n[0]
+</code>
+(The "[0]" in this code is the index, like in python. What this code will do is print out the first letter in the string.)
+
+#### Length Member Function
+<code>
+int x = n.length();
+char last.digit = n[x-1];
+</code>
+
+#### Traversal
+- Select each character in turn and do something to it
+
+#### Find
+- The opposite of the [] operator.
+- Find takes the character and determine where it appears in the string
+<code>
+string n = "hello";
+int index = n.find('e');
+</code>
+Will find the place of the 'e' letter and return it as an integer.
+
+#### Concatenation
+- Joins two operands end to end
+- You can add strings using the operators
+<code>
+string fruit = "banana";
+string baked.good = " nut bread";
+string dessert = fruit + baked.good;
+cout << dessert << endl;
+</code>
+- You need to make it it's own variable for the joint of the two of them
+
+#### Strings are Mutable
+- You can change lettes in a string one at a time
+- Use the [] operator
+##### Other string member functions
+- .append
+- .push_back
+- .substr
+- .swap
+
+#### Getting User Input
+<code>cin >> x; </code>
+- Works on strings
+
