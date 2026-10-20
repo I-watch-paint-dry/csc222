@@ -18,7 +18,7 @@ int main()
     }
     cout << endl;
 
-    int nums2[4];
+    int nums2[4] = {1, 2, 42, 8};
     ip = nums2;
     for (int i=0; i<4; i++){
     	cout << *(ip++) << ' ';
