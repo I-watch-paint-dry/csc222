@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-void will_swap(const a )
+void will_swap(char a, char b)
 {
     cout << "a: " << a << "  b: " << b << endl;
     cout << "address of a: " << long(&a) << endl;
@@ -13,7 +13,7 @@ void will_swap(const a )
     cout << "a: " << a << "  b: " << b << endl;
 }
 
-void will_swap_with_pointers(char* a, char* b)
+void will_swap_with_pointers(char* c, char* b)
 {
     cout << "a: " << *a << "  b: " << *b << endl;
     cout << "address of a: " << long(a) << endl;
