@@ -1,11 +1,9 @@
 #include <iostream>
-#include <string>
 #include <cstdlib>
 #include <algorithm>
 #include <random>
-#include <time.h>
+//#include <time.h>
 #include <ctime>
-#include <chrono>
 
 using namespace std;
 
@@ -17,14 +15,13 @@ int number[5] = {1, 2, 3, 4, 5};
 void mixit(void) {
    int temp;
    int random_num1 = (rand() % 5);
-   cout << "rnum1 is: " << random_num1 << ' ';
    int random_num2 = (rand() % 5);
-   cout << "rnum2 is: " << random_num2 << endl;
 
    temp = number[random_num1];
-   cout << "temp is: " << temp << ' ';
    number[random_num1] = number[random_num2];
    number[random_num2] = temp;
+
+   // cout << number << endl;
 }
 
 int main() {
@@ -49,7 +46,7 @@ int main() {
    */
 
    // invokes the function 10 times
-   for (int i = 0; i<10; i++){
+   for (int i = 0; i<5; i++){
        mixit();
    }
 
