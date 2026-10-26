@@ -23,6 +23,19 @@ myarray(random_num2) = temp;
 
 */
 
+// this function randomly switches 2 of the members of the array
+void mixit(void){
+int temp;
+int random_num1 = (rand() % 5);
+int random_num2 = (rand() % 5);
+
+temp = number[random_num1];
+number[random_num1] = number[random_num2];
+number[random_num2] = temp;
+
+}
+
+
 int main() {
 	
 	cout << "Type integer 1: ";
@@ -42,7 +55,10 @@ int main() {
 	cin >> number[4];
 
 
+for (int i = 0; i<10; i++){
 
+	mixit();
+}
 
 
 
