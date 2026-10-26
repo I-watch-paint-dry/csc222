@@ -6,13 +6,7 @@
 
 using namespace std;
 
-struct pointarray{
-int A;
-int B;
-int C;
-int D;
-int E;
-};
+int number[5];
 
 /*struct pointarray mixit(int a; int b; int c; int d; int e){
 int temp;
@@ -30,29 +24,33 @@ myarray(random_num2) = temp;
 */
 
 int main() {
-	int a;
-	int b;
-	int c;
-	int d;
-	int e;
-
-
-
-	cout << "Type integer 1";
-	cin >> a;
 	
-	cout << "Type integer 2";
+	cout << "Type integer 1: ";
+	cin >> number[0];
+	
+	cout << "Type integer 2: ";
 
-	cin >> b;
-	cout << "Type integer 3";
+	cin >> number[1];
+	cout << "Type integer 3: ";
 
-	cin >> c;
-	cout << "Type integer 4";
+	cin >> number[2];
+	cout << "Type integer 4: ";
 
-	cin >> d;
-	cout << "Type integer 5";
+	cin >> number[3];
+	cout << "Type integer 5: ";
 
-	cin >> e;
+	cin >> number[4];
 
-	cout << a << b << c <<  d <<  e <<  endl;
+
+
+
+
+
+for (int i =0; i<5; i++){
+
+	cout << number[i] << " ";
+
+}
+
+	cout << endl;
 }
