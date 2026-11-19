@@ -1,3 +1,6 @@
+
+// Link to problem instructions:
+// https://www.cs.umd.edu/Outreach/hsContest03/questions/all.html
 //-----------------------------------------------------------------------
 //	File:		prob.cpp
 //	Description:	hidden enchantment
@@ -5,16 +8,9 @@
 //-----------------------------------------------------------------------
 
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include <assert.h>
-
-// Uncomment the following lines if using APCS classes
-// #include "apvector.h"
-// #include "apmatrix.h"
-// #include "apstack.h"
-// #include "apqueue.h"
-
-#include "apstring.cpp"
+#include <string>
 
 //-----------------------------------------------------------------------
 //  main
