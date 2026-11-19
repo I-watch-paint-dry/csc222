@@ -3,6 +3,7 @@ import java.util.*;
 public class KoopaFinda {
 
     private static int lookForKoopa(String str) {
+   cout << "temp is: " << temp << ' ';
         int result = -1;
 
         // Insert your code here
