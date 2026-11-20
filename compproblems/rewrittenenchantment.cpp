@@ -30,4 +30,38 @@ int main(){
 	if ((blen > MAXLEN) || (elen > MAXLEN)){
 		cout << "Error, string longer than" << MAXLEN << endl;
 	}
+
+	// if there are matches between two sequences
+	for (i=0; i < elen; i++){
+		for (j=0; i<blen; j++){
+			if (enchant[i] == book[j])
+				rpmatch[i][j] = 'x';
+		}
+	}
+
+	// matches of 3 or more
+	for (i=0; i<elen-2; i++){
+		for (j=0; j<blen-2; j++){
+			if(rpmatch[i][j] != '.'){
+				rpmatch[i][j] = 'Q';
+				rpmatch[i+1][j+1] = 'Q';
+				rpmatch[i+2][j+2] = 'Q';
+			}	
+		}
+	}
+	// output
+	cout << " " << book << endl;
+	cout << " ";
+	for (i=0; i < blen; i++){
+		cout << "-";}
+	cout << endl;
+
+	for (i=0; i<elen; i++){
+		cout << enchant[i] << "|";
+		for (j=0; j<blen; j++){
+			cout << rpmatch[i][j];
+		}
+		cout << endl;
+	}
+	return 0;
 }

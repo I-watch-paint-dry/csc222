@@ -500,3 +500,15 @@ cout << dessert << endl;
 <code>cin >> x; </code>
 - Works on strings
 
+## 10/6/2026
+Namespaces
+
+.compare
+- It will return -1 if the first thing proceeds the second
+- 0 if they're equal
+- 1 if the second thing is bigger
+What does this mean?
+- Every character is a byte
+- A string is an array of characters
+
+# Update: Due to unreliable technology issues, I now take my notes on paper.
